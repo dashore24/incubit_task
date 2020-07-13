@@ -30,4 +30,26 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  controller:
+    registrations:
+      welcome: Welcome to Incubit ...
+
+  views:
+    title: Incubit
+    navbar:
+      sign_up: Sign up
+    labels:
+      email: Email
+      username: Username
+      password: Password
+      confirm_password: Confirm Password
+    placeholder:
+      username: Max
+      email: max@example.com
+      password: '********'
+
+  errors:
+    messages:
+      not_saved:
+        one: "1 error prohibited this %{user} from being saved:"
+        other: "%{count} errors prohibited this %{user} from being saved:"

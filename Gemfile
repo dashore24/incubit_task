@@ -29,6 +29,9 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 # Use figaro as the configuration management
 gem 'figaro'
+# Use haml as view engine
+gem 'haml'
+gem 'haml-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
