@@ -1,0 +1,26 @@
+development:
+  DB_NAME: 'incubit_registration_development'
+  DB_USERNAME: 'postgres'
+  DB_PASSWORD: 'postgres'
+  DB_HOST: 'localhost'
+  DB_PORT: '5432'
+
+  SUPPORT_EMAIL: 'support@example.com'
+  HOST: 'localhost:3000'
+  REDIS_URL: 'redis://localhost:6379'
+
+test:
+  DB_NAME: 'incubit_registration_test'
+  DB_USERNAME: 'postgres'
+  DB_PASSWORD: 'postgres'
+  DB_HOST: 'localhost'
+  DB_PORT: '5432'
+  REDIS_URL: ''
+
+production:
+  DB_NAME: ''
+  DB_USERNAME: ''
+  DB_PASSWORD: ''
+  DB_HOST: ''
+  DB_PORT: ''
+  REDIS_URL: ''
