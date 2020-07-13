@@ -3,6 +3,7 @@ class User < ApplicationRecord
 
   # callbacks
   before_create :assign_username
+  after_create :process_welcome_email
 
   # validations
   validates :username, length: { minimum: Constant::MIN_USERNAME_LENGTH },
@@ -14,6 +15,10 @@ class User < ApplicationRecord
 
   validates :password, presence: true,
                        length: { minimum: Constant::MIN_PASSWORD_LENGTH }, if: :password_digest_changed?
+
+  def process_welcome_email
+    EmailWorker.perform_async(:welcome_user, email, :deliver_later)
+  end
 
   private
 
