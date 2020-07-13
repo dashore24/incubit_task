@@ -44,7 +44,11 @@ en:
   views:
     title: Incubit
     navbar:
+      site_name: Incubit User Registration
+      sign_in: Sign in
+      sign_out: Sign out
       sign_up: Sign up
+      edit_profile: Edit profile
     labels:
       email: Email
       username: Username

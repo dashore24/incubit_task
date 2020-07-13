@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   resource :profile, only: %i[show]
 
   get '*path', to: redirect('/')
+
+  root to: 'profiles#show'
 end
