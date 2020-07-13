@@ -1,0 +1,89 @@
+body {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00d2fa+0,9547f8+100 */
+	background: #00d2fa; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #00d2fa 0%, #9547f8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #00d2fa 0%,#9547f8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #00d2fa 0%,#9547f8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d2fa', endColorstr='#9547f8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-repeat: no-repeat;
+    height: 100vh;	
+}
+
+a.navbar-brand {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+ul.navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+
+ul.navbar-nav .nav-item .nav-link:hover {
+  color: #fff;
+}
+
+main .alert {
+	max-width: 400px;
+	margin:0 auto;
+	text-align: center;
+}
+
+.authentication-wrapper {
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-direction: column;
+  height: 78vh;
+}
+
+.field-area {
+	max-width: 400px;
+	background: #fff;
+	margin: 0 auto;
+	width: 100%;	
+	border-radius: 6px;
+}
+
+.field-heading {
+  text-align: center;
+}
+
+.field-heading h2 {
+  font-weight: 600;
+  font-size: 22px;
+  border-bottom: 1px solid #f1efef; 
+  padding: 15px 10px;
+}
+
+.field-area fieldset {
+	padding: 15px 30px
+	;
+}
+
+.field-area fieldset .form-control:focus {
+	box-shadow: none;
+	border: 1px solid #9547f8;
+
+}
+
+
+.link a {
+  color: #333;
+  font-size: 13px;
+}
+
+.btn-submit {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00d2fa+0,9547f8+100 */
+	background: #00d2fa; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #00d2fa 0%, #9547f8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #00d2fa 0%,#9547f8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #00d2fa 0%,#9547f8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d2fa', endColorstr='#9547f8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat;
+  color: #fff !important;
+  border-radius: 4px;
+  padding: 6px 30px;
+  border: none;
+
+}

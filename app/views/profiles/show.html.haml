@@ -1,15 +1,17 @@
-%main.my-form
-  .container
-    .row.justify-content-center
-      .col-md-8
-        .card
-          .card-header= t('views.users.my_profile')
-          .card-body
-            .form-group.row
-              %label.col-md-4.col-form-label= t('views.labels.email')
-              .col-md-8
-                %label.col-md-4.col-form-label= current_user.email
-            .form-group.row
-              %label.col-md-4.col-form-label= t('views.labels.username')
-              .col-md-8
-                %label.col-md-4.col-form-label= current_user.username
+.authentication-wrapper
+  .field-area
+    .field-heading
+      %h2
+        = t('views.users.my_profile')
+    %fieldset
+      = form_for :user, url: password_path, local: true do |f|
+        .form-group.row
+          %label.col-3
+            = t('views.labels.email')
+          %label.col-9
+            = current_user.email
+        .form-group.row
+          %label.col-3
+            = t('views.labels.username')
+          %label.col-9
+            = current_user.username
