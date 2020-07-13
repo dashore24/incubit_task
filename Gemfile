@@ -41,7 +41,11 @@ group :development, :test do
   gem 'rubocop', require: false
 
   # Use for testing
+  gem 'fabrication'
+  gem 'faker'
+  gem 'rails-controller-testing'
   gem 'rspec-rails', '~> 4.0.0'
+  gem 'shoulda-callback-matchers', '~> 1.1.1'
   gem 'shoulda-matchers'
 end
 
@@ -54,6 +58,10 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Use for emailing
   gem 'letter_opener'
+end
+
+group :test do
+  gem 'rspec-sidekiq'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

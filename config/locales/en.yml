@@ -59,6 +59,9 @@ en:
       email: max@example.com
       password: '********'
 
+  tests:
+    invalid_email: 'abcd@de@fg'
+
   errors:
     messages:
       not_saved:
