@@ -2,7 +2,6 @@ require 'rails_helper'
 require 'faker'
 
 RSpec.describe ProfilesController, type: :controller do
-
   let(:user) { Fabricate.create(:user) }
 
   describe 'GET #show' do

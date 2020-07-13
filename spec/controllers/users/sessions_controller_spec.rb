@@ -2,7 +2,6 @@ require 'rails_helper'
 require 'faker'
 
 RSpec.describe Users::SessionsController, type: :controller do
-
   let(:user) { Fabricate.create(:user) }
 
   describe 'GET #new' do

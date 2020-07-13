@@ -56,6 +56,9 @@ en:
       sign_out: Sign out
       sign_up: Sign up
       edit_profile: Edit profile
+    users:
+      my_profile: My Profile
+      update_profile: Update Profile
     labels:
       email: Email
       username: Username
