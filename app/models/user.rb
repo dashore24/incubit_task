@@ -20,6 +20,18 @@ class User < ApplicationRecord
     EmailWorker.perform_async(:welcome_user, email, :deliver_later)
   end
 
+  def create_password_reset_token
+    update(reset_password_token: token, reset_password_sent_at: Time.zone.now)
+  end
+
+  def send_password_reset_email
+    EmailWorker.perform_async(:reset_password, email, :deliver_later)
+  end
+
+  def password_reset_token_expired?
+    reset_password_sent_at < Constant::RESET_TOKEN_EXPIRE_PERIOD.hours.ago
+  end
+
   def authenticate?(password)
     authenticate(password)
   end
@@ -28,5 +40,12 @@ class User < ApplicationRecord
 
   def assign_username
     self.username = email.split('@').first
+  end
+
+  def token
+    loop do
+      generated_token = SecureRandom.urlsafe_base64
+      return generated_token unless User.exists?(reset_password_token: generated_token)
+    end
   end
 end
