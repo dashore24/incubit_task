@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Users::RegistrationsController < ApplicationController
+  skip_before_action :authenticate_user!
+
   def new
     @user = User.new
   end
