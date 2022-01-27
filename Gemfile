@@ -33,7 +33,7 @@ gem 'figaro'
 gem 'haml'
 gem 'haml-rails'
 # Simple, efficient background processing for Ruby.
-gem 'sidekiq', '~> 5.2.8'
+gem 'sidekiq', '~> 6.4.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
